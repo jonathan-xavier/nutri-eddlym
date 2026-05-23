@@ -6,7 +6,7 @@ export function FinalCta() {
     <section className="py-20">
       <div className="section-container">
         <div className="rounded-3xl bg-primary px-8 py-14 text-center text-white sm:px-16">
-          <h2 className="text-3xl font-bold sm:text-4xl">
+          <h2 className="font-display text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
             Pronto(a) para começar sem sofrimento?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-primary-light/90 text-lg">

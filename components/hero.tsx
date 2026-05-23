@@ -12,7 +12,7 @@ export function Hero() {
           <p className="mb-4 inline-flex rounded-full bg-white/15 px-4 py-1.5 text-sm font-semibold text-white">
             {site.modalityLabel}
           </p>
-          <h1 className="text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-[3.25rem] lg:leading-[1.1]">
+          <h1 className="font-display text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-[3.25rem] lg:leading-[1.1]">
             {site.hero.headline}
           </h1>
           <p className="hero-text-secondary mt-6 text-lg leading-relaxed">{site.hero.subheadline}</p>

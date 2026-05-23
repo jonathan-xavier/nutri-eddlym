@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
+import { Fraunces, Manrope } from "next/font/google";
 import { site } from "@/lib/site-data";
 import { images } from "@/lib/images";
 import { nutritionBusinessJsonLd } from "@/lib/schema";
@@ -9,6 +9,12 @@ const manrope = Manrope({
   variable: "--font-manrope",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+});
+
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
+  subsets: ["latin"],
+  weight: ["600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -46,7 +52,7 @@ export default function RootLayout({
   const jsonLd = nutritionBusinessJsonLd();
 
   return (
-    <html lang="pt-BR" className={`${manrope.variable} h-full antialiased`}>
+    <html lang="pt-BR" className={`${manrope.variable} ${fraunces.variable} h-full antialiased`}>
       <head>
         <script
           type="application/ld+json"
