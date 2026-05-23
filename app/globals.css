@@ -62,3 +62,32 @@ body {
 .image-placeholder {
   @apply flex items-center justify-center rounded-2xl border-2 border-dashed border-primary/30 bg-primary-light text-sm font-medium text-primary;
 }
+
+.hero-section {
+  background: linear-gradient(135deg, #111827 0%, #1b4332 50%, #2d6a4f 100%);
+  color: #ffffff;
+}
+
+.hero-text-secondary {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.hero-btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white;
+  background-color: #d4a373;
+  color: #111827;
+}
+
+.hero-btn-primary:hover {
+  background-color: #c49263;
+}
+
+.hero-btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-transparent px-6 py-3 text-sm font-semibold text-white transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero-btn-secondary:hover {
+  border-color: rgba(255, 255, 255, 0.35);
+  background-color: rgba(255, 255, 255, 0.08);
+}
